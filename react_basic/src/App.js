@@ -1,31 +1,36 @@
-import React, { Component } from 'react';
-import MyCompoent from './Component/MyComponent';
-import Counter from './Component/Counter';
-import Say from './Component/Say';
-import EventPractice from './EventHandling/EventPractice';
-import ValidationSample from './Ref/ValidationSample';
-import ScrollBox from './Ref/ScrollBox';
-import IterationSample from './Iterator/IterationSample';
-class App extends Component {
-  render() {
-    // {<MyComponent name="react" favoriteNumber={3}>
-    //   리액트
-    // </MyComponent> }
-    /* <Counter></Counter> */
-    // return <Say></Say>;
-    // return <EventPractice />;
-    // return <ValidationSample />;
+import React, { useState } from 'react';
+// import Counter from './Hooks/Counter';
+import Counter from './Hooks/Counter_reducer';
+// import Info from './Hooks/Info';
+import Info from './Hooks/Info_reducer';
+import Average from './Hooks/Average';
 
-    /*return (
-      <div>
-        <ScrollBox ref={ref => (this.scrollBox = ref)} />
-        <button onClick={() => this.scrollBox.scrollToBottom()}>
-          맨밑으로
-        </button>
-      </div>
-    );*/
-    return <IterationSample />;
-  }
-}
+//Hook을 위한 App.js
+const App = () => {
+  // 카운터 처리
+  // return <Counter />;
+
+  // 인포 관련 처리
+
+  // return <Info />;
+
+  // const [visible, setVisible] = useState(false);
+  // return (
+  //   <div>
+  //     <button
+  //       onClick={() => {
+  //         setVisible(!visible);
+  //       }}
+  //     >
+  //       {visible ? '숨기기' : '보이기'}
+  //     </button>
+  //     <hr />
+  //     {visible && <Info />}
+  //   </div>
+  // );
+
+  // useMemo 처리 - 함수형 컴포넌트 연산 최적화
+  return <Average />;
+};
 
 export default App;
