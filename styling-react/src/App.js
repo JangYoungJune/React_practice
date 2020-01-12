@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import SassComponent from './SassComponent/SassComponent';
+import CSSModule from './CssModule/CSSModule';
 
 function App() {
   // default & css selector
@@ -25,9 +26,16 @@ function App() {
   // );
 
   // sass 처리
+  // return (
+  //   <div>
+  //     <SassComponent></SassComponent>
+  //   </div>
+  // );
+
+  // css-module 처리
   return (
     <div>
-      <SassComponent></SassComponent>
+      <CSSModule />
     </div>
   );
 }
