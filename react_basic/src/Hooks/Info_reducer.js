@@ -1,16 +1,23 @@
 import React, { useReducer } from 'react';
+import useInputs from './useInputs';
+/*
 const reducer = (state, action) => {
   return {
     ...state,
     [action.name]: action.value
   };
 };
+*/
 const Info_reducer = () => {
+  /*
   const [state, dispatch] = useReducer(reducer, { name: '', nickname: '' });
   const { name, nickname } = state;
   const onChange = e => {
     dispatch(e.target);
   };
+  */
+  const [state, onChange] = useInputs({ name: '', nickname: '' });
+  const { name, nickname } = state;
   return (
     <div>
       <div>
