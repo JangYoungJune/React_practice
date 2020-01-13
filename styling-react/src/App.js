@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import SassComponent from './SassComponent/SassComponent';
 import CSSModule from './CssModule/CSSModule';
+import StyledComponent from './StyledComponent/StyledComponent';
 
 function App() {
   // default & css selector
@@ -33,9 +34,16 @@ function App() {
   // );
 
   // css-module 처리
+  // return (
+  //   <div>
+  //     <CSSModule />
+  //   </div>
+  // );
+
+  // styled-component 문제 처리
   return (
     <div>
-      <CSSModule />
+      <StyledComponent />
     </div>
   );
 }
